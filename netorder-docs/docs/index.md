@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# 河南省调网络化下令系统使用手册
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+本手册修订于2026年。
 
-## 1. Commands
+## 手册组成
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## 2. Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* 系统及网络端口介绍
+* 操作票类相关模块
+* 检修票类相关模块
+* 信息交互类相关模块
+* 近期更新模块
+* ...
