@@ -1,0 +1,1545 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="cui_jiaqi">
+      
+      
+      
+        <link rel="prev" href="../%E6%93%8D%E4%BD%9C%E7%A5%A8%E7%B1%BB%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97/">
+      
+      
+        <link rel="next" href="../%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E7%B1%BB%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>检修票类相关模块 - 网络化下令系统使用手册</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="网络化下令系统使用手册" class="md-header__button md-logo" aria-label="网络化下令系统使用手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            网络化下令系统使用手册
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              检修票类相关模块
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="网络化下令系统使用手册" class="md-nav__button md-logo" aria-label="网络化下令系统使用手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    网络化下令系统使用手册
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    系统简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%98%B2%E7%81%AB%E5%A2%99%E5%BC%80%E9%80%9A%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    防火墙开通申请流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%93%8D%E4%BD%9C%E7%A5%A8%E7%B1%BB%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作票类相关模块
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检修票类相关模块
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检修票类相关模块
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        带电工作票申请
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="带电工作票申请">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        工作申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        审核
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开工
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完工
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高压线路检修票
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高压线路检修票">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        待接收
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        许可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        终结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通信检修票
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通信检修票">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退出流转中
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="退出流转中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受影响设备通知（工作开工）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退出设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投入流转中
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="投入流转中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受影响设备通知（工作完工）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投入设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网检票管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票批答
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现场申请开工
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票终结
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作废
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        紧急抢修单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="紧急抢修单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        融冰申请单
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E7%B1%BB%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息交互类相关模块
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%BA%E7%BB%84%E7%AE%A1%E7%90%86%E7%B1%BB%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机组管理类相关模块
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        带电工作票申请
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="带电工作票申请">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        工作申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        审核
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开工
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完工
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高压线路检修票
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高压线路检修票">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        待接收
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        许可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        终结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通信检修票
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通信检修票">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退出流转中
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="退出流转中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受影响设备通知（工作开工）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退出设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投入流转中
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="投入流转中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受影响设备通知（工作完工）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投入设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网检票管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票批答
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现场申请开工
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票终结
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网检票延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作废
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        紧急抢修单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="紧急抢修单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        申请
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        延期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        融冰申请单
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">检修票类相关模块</h1>
+<h2 id="_2">带电工作票申请</h2>
+<h3 id="_3">工作申请</h3>
+<p>各地调与送变电公司如有工作需求，按省调调规向省调提出申请。</p>
+<blockquote>
+<p>注意：对于500kV及以上线路，根据上级调度要求，若发现无需当天处理的临时缺陷，需带电作业的，应及时提前申报网调计划。若发现必须当天处理的临时缺陷，需带电作业的，应在发现时立即汇报，不得做好准备后、人员就位后再汇报申请操作，而须提前汇报。</p>
+</blockquote>
+<p>如需申请，在<code>带电作业工作申请</code>中点击<code>申请</code>，在右侧页面上方点击<code>新增</code>。</p>
+<p>点击新增后在弹出的页面进行申请操作，如果需要投退重合闸，在是否投退重合闸中选择“是”。将其他表单信息填写完整后点击“保存”保存表单信息，点击“送审”，保存并发送至审核环节。</p>
+<h3 id="_4">审核</h3>
+<p>提交申请后需及时电话汇报省调。审核环节是由调度员处理的环节，厂站端人员无需操作此环节。</p>
+<h3 id="_5">执行</h3>
+<h4 id="_6">开工</h4>
+<p>审核通过后，现场如具备开工条件，向省调电话申请开工。当日许可开工的相关信息由省调调度员填写。</p>
+<p>待右上角显示“调度已批准开工，等待厂站回复完工”时，则表示今日工作调度已许可开工。</p>
+<h4 id="_7">完工</h4>
+<p>本日现场工作完工后，本地调/送变电公司应及时报完工。</p>
+<p>在回复后，当前显示状态为厂站已回复完工，等待调度确认。应及时电话汇报省调，由省调调度员点击完工确认按钮进行完工确认。</p>
+<blockquote>
+<p>注意：在完工栏目中有一项为“工作是否总完工”，对于申报多日的带电作业工作，需按实际情况填写。</p>
+</blockquote>
+<h3 id="_8">归档</h3>
+<p>调度员进行当日完工确认后，整体票面右上角显示当前状态为所有工作已完工，等待调度归档 。电话汇报省调归档即可。</p>
+<p>操作票执行完成后方可至归档环节进行查看，归档后流程结束不再进行操作。</p>
+<h2 id="_9">高压线路检修票</h2>
+<h3 id="_10">申请</h3>
+<p>对于地调、送变电公司、发电单位，对于<strong>本公司运维</strong>的220kV及以上线路，按计划开展线路工作时，须按调规规定提前一天向省调申报高压线路检修票。</p>
+<p>点击<code>申请</code>视图后，在弹出的页面里面点击“<code>新增</code>”按钮进行添加操作。</p>
+<p>在弹出的页面进行申请操作，将表单信息填写完整后点击“<code>保存</code>”保存表单信息，点击“<code>送审</code>”，保存并发送至待接收环节，并电话汇报省调。</p>
+<blockquote>
+<p>注意：必须按调规提前一日申报，不得当日申报当日开工。且须按日计划申报内容将工作信息填写完整，避免漏填。</p>
+</blockquote>
+<h3 id="_11">待接收</h3>
+<p>提出申请后，及时电话汇报。此环节为调度接收环节，厂站端无需操作，自动设置状态为等待调度接收。</p>
+<h3 id="_12">许可</h3>
+<p>调度接收后，进入待许可状态。省调将按计划进行操作，操作完毕后通知申报单位核实是否具备开工条件。</p>
+<p>此时申报单位（如地调）须与现场人员核对，若具备条件，则在系统中申请检修票开工。省调经系统许可并电话许可后方可开展工作。</p>
+<h3 id="_13">执行</h3>
+<p>申报单位（如地调）签收完成后，自动流转至执行环节。</p>
+<p>当前状态为执行的票，可以操作申请终结或申请延期。根据需要点击“申请终结”或者“申请延期”。</p>
+<h4 id="_14">延期</h4>
+<p>如需延期，将相应的延期信息填写完整后点击“申请延期”按钮。延期申请完成后进入调度审批环节，状态更新为：厂站已申请延期，等待调度审批。</p>
+<p>OMS计划系统中，中心会签完毕批准延期后，需计划申报单位及时汇报省调调度台。调度台查阅系统无误后，按计划许可延期，进入待终结环节。</p>
+<blockquote>
+<p>注意：申请高压线路检修票延期前，需要先电话汇报省调，申请OMS日检修计划延期。申请延期需要严格执行《河南调度检修计划管理流程规范》。</p>
+</blockquote>
+<h4 id="_15">终结</h4>
+<p>申报单位（如地调）将相应的终结信息填写完整后，点击“申请终结”按钮，并及时电话逐一汇报下方相关信息，由省调当值调度员受理终结。</p>
+<h3 id="_16">归档</h3>
+<p>检修票执行完成后方可至归档环节进行查看，归档后流程结束不再进行操作。    </p>
+<h2 id="_17">通信检修票</h2>
+<h3 id="_18">退出流转中</h3>
+<p>对于地调及厂站单位，一般在<code>退出流转中</code>流程中开始介入。</p>
+<p>收到省调电话通知后，要求操作退出设备的通信票在此流程中，找到省调通知的票号后，进入对应通信检修票的页面。对于操作单位，需主要关注以下两项。</p>
+<h4 id="_19">受影响设备通知（工作开工）</h4>
+<p>对于本栏目下，省调发送通知的设备，表示即将开展的通信工作将影响此设备通道。仅需查看，无需操作。</p>
+<p>如：220kV XX线光纤差动保护（NSR-303） 通道B</p>
+<p>则接到省调通知后，需核实220kV XX线NSR-303 通道A运行正常，且此线路的另一套保护运行正常。与现场运维人员确认无误后，方可在本条通知右方点击<code>签收</code>。</p>
+<h4 id="_20">退出设备</h4>
+<p>本栏目下，省调发送的设备，需进行退出操作。</p>
+<p>操作流程参考许可操作中的五步流程，均需同时开展电话令双轨制执行。按省调调度令操作即可。</p>
+<blockquote>
+<p>注意：正常情况下，在此处执行退保护或稳控的调度指令时，退保护仅需退主保护，操作前须查另一套线路保护运行正常。</p>
+</blockquote>
+<h3 id="_21">投入流转中</h3>
+<h4 id="_22">受影响设备通知（工作完工）</h4>
+<p>相应地，通信工作完工后，省调将电话告知先前单位。</p>
+<p>此时需各单位核实，所展示的先前通信工作所影响的通道，当前时刻站内保护/稳控均正常，无异常信号。确认无误后在系统中签收对应项。</p>
+<h4 id="_23">投入设备</h4>
+<p>同样地，通信工作完工后，需要投入之前退出的保护/稳控通道，恢复正常运行方式。</p>
+<p>按省调令开展投入操作即可，操作后查设备运行正常后回令。</p>
+<h2 id="_24">网检票管理</h2>
+<h3 id="_25">网检票批答</h3>
+<p>接到省调通知接收的电话后，厂站端进入对应票面。在核对票面相关信息无误后，勾选页面下方<code>现场接收</code>环节需要接收的单位，点击票面的右上角“<code>接收</code>”按钮对网检票进行接收。</p>
+<h3 id="_26">现场申请开工</h3>
+<p>厂站人员核实现场设备与票面一致、且现场已具备开工条件后，应及时申请网检票开工。</p>
+<p>操作方法为：在票面的<code>现场申请开工</code>栏目勾选申请单位，并填写申请开工时间，点击页面右上角“<code>现场申请开工</code>”按钮，并电话汇报，进行开工申请。</p>
+<h3 id="_27">网检票终结</h3>
+<p>如果不需要延期，需要现场提交终结申请。操作方法为，现场将现场终结环节的信息填写完整后，点击右上方“<code>现场申请终结</code>”按钮，并电话汇报。</p>
+<p>各单位均提交了终结申请，省调向网调申请完工。网调受理后，省调发送操作至网检票终结环节。</p>
+<h3 id="_28">网检票延期</h3>
+<p>如需要延期，在网检票票面右上方点击“<code>现场申请延期</code>”按钮，在弹出的页面中，将延期申请信息填写完整后，点击“保存”按钮，并电话汇报。</p>
+<p>申请后及时关注网检票延期的状态即可。网调批准后，省调在系统中进行批准操作，操作完成后会流转至网检票终结环节。</p>
+<h3 id="_29">归档</h3>
+<p>网检票执行完成后，方可至归档环节进行查看，归档后流程结束不再进行操作。</p>
+<h3 id="_30">作废</h3>
+<p>已批答的网检票，因某些特殊情况无法执行时，由网调通知省调此票作废，由省调操作作废。厂站单位可在相应环节进行查看。</p>
+<h2 id="_31">紧急抢修单</h2>
+<h3 id="_32">申请</h3>
+<p>紧急抢修单仅适用于省调调度的一次设备。二次设备不申报。上级调度设备在上级系统中申报。</p>
+<p>当运维单位发现一次设备存在危急缺陷时，设备需按规程紧急停运消缺，则需准备情况说明，及时申报紧急抢修单。</p>
+<p>情况说明应简明、直观，且必须包含以下要素：</p>
+<ul>
+<li>
+<p>明确缺陷类型为危急缺陷（而非一般缺陷等）；</p>
+</li>
+<li>
+<p>设备运维单位明确提出“设备不能坚持运行”意见，不得含糊其辞；</p>
+</li>
+<li>
+<p>加盖设备运维单位公章（如变电中心、输电中心，或运检部公章）；</p>
+</li>
+<li>
+<p>提供现场照片（如发热设备测温、开口销脱落、导线断股）。</p>
+</li>
+</ul>
+<blockquote>
+<p>注意：若线路停运后构成五级电网风险的，必须在申请停运前落实五级风险预控措施。</p>
+</blockquote>
+<p>在申请时，点击<code>新增</code>按钮进入页面，将相关设备及状态信息填写完整，并填写清楚填写紧急抢修必要性说明，在附件处上传已准备好的文字材料，在右上角提交<code>送审</code>，及时电话汇报。</p>
+<h3 id="_33">执行</h3>
+<p>省调接收后紧急抢修单后，将进入此环节。</p>
+<p>待设备操作到位后，申报单位核实设备状态与票面一致、且现场具备开工条件，及时在系统中<code>申请开工</code>。及时在系统中关注省调许可状态。</p>
+<h3 id="_34">延期</h3>
+<p>如有必要，在系统中申请延期，将必要性填写清楚。</p>
+<p>需要注意申请延期的时间限制，若时间较长，则应及时申请紧急抢修单终结，停止工作，及时补报省调检修日计划。</p>
+<h3 id="_35">归档</h3>
+<p>当现场工作完工后，需及时申请终结，申请前需要在系统中将相关信息填写完整。</p>
+<p>申请前务必与工作负责人核对，核实现场工作已终结、人员已全部撤离、设备具备送电条件。填写完毕后在页面右上角向省调<code>申请终结</code>，并电话汇报。</p>
+<p>省调受理后，可以在<code>归档</code>栏目查看历史信息。</p>
+<h2 id="_36">融冰申请单</h2>
+<p>此项目仅适用于开展线路融冰工作时联系使用。</p>
+<p>当220kV线路（省调直调线路）出现线路覆冰，需要停运开展融冰时，使用此模块提报融冰申请单。</p>
+<blockquote>
+<p>注意：
+* 授权地调调度的220kV线路开展融冰工作时，无需在此申报。
+* 上级调度设备进行融冰时，需在此填报。这里管理要求与带电作业票要求类似，与紧急抢修单则不同。</p>
+</blockquote>
+<p>申请时，需要按实际情况将融冰类型、方式、电源点、短接点、运行方式等详情在页面填写清楚。</p>
+<p>整体业务联系流程，仍按申报-接收-执行-归档执行。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
