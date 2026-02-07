@@ -1,0 +1,21 @@
+#项目信息
+site_name: 网络化下令系统使用手册
+site_author: cui_jiaqi
+
+#主题配置
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+
+
+nav:
+  - 前言: index.md
+  - 系统简介: 系统简介.md
+  - 防火墙开通申请流程: 防火墙开通申请流程.md
+  - 操作票类相关模块: 操作票类相关模块.md
+  - 检修票类相关模块: 检修票类相关模块.md
+  - 信息交互类相关模块: 信息交互类相关模块.md
+  - 机组管理类相关模块: 机组管理类相关模块.md
+  - （新）输变电检修登记类相关模块: （新）输变电检修登记类相关模块.md
