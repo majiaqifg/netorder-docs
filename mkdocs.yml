@@ -1,14 +1,33 @@
 #项目信息
 site_name: 网络化下令系统使用手册
 site_author: cui_jiaqi
+site_url: https://majiaqifg.github.io/netorder-docs/
+repo_url: https://github.com/majiaqifg/netorder-docs
+repo_name: netorder-docs
+
 
 #主题配置
 theme:
   name: material
+  language: zh
   palette:
-    primary: indigo
-    accent: indigo
-
+    # Palette toggle for automatic mode  自动模式调色板切换
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode  灯光模式的调色板切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode  深色模式的调色板切换
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 nav:
   - 前言: index.md
